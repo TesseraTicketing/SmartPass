@@ -1,0 +1,26 @@
+<div id="overlay" class="">
+</div>
+
+<div class="modal" id="accountModal">
+    <div class="closeButton"></div>
+    <h2 class="modalTitle">Create Account</h2>
+    <form class="accountForm">
+        <input class="formElement" id="accountFirstName" type="text" name="fname" placeholder="First Name" required>
+        <input class="formElement" id="accountLastName" type="text" name="lname" placeholder="Last Name" required>
+        <input class="formElement" id="accountID" type="text" name="smuid" placeholder="SMU ID" required pattern="[0-9]{8}" title="SMU ID not valid">
+        <input class="formElement" id="accountEmail" type="email" name="email" placeholder="SMU Email" required pattern="\w+@\w+.\w+" title="not a valid email address">
+        <input class="formElement" id="accountPassword" type="password" name="password" placeholder="Password" required pattern=".{8,}" title="password must be greater than or equal to 8 characters">
+        <input class="formElement" id="accountPassword2" type="password" name="password2" placeholder="Re-Enter Password" required="passwords must match">
+        <input id="accountSubmit" type="submit" value="Submit">
+    </form>
+</div>
+
+<div class="modal" id="logoutModal">
+    <div class="closeButton"></div>
+    <h2 class="modalTitle">Logout?</h2>
+    <div class="buttonContainer">
+        <div id="yesLogout">Yes</div>
+        <div id="noLogout">No</div>
+    </div>
+</div>
+
